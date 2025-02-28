@@ -15,7 +15,8 @@ This Violentmonkey script monitors the Grafana page every minute.
 When a string that starts with 'ALERT', like the example below, appears in an alerting panel, the script captures it and sends the trailing substrings, split by '_', to your Slack channel."
 
 ```
-ALERT_2025-02-25-16:53_187.938_NRT_P50_TTFB_1500ms_MISSPASS_test
+- ALERT_2025-02-25-16:53_5402.938_NRT_P50_TTFB_1500ms_MISSPASS_test
+- NORMAL_2025-02-25-16:54_187.233_NRT_P50_TTFB_1500ms_MISSPASS_test
 ```
 
 Therefore, auto-refresh in Grafana should be enabled.
