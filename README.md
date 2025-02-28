@@ -1,6 +1,25 @@
 
 # OriginalGrafanaAlert
 
+# Explanation 
+
+This tool is not ideal for Grafana Alerting.
+In my case, I was unable to enable Grafana Alert due to budget constraints, so I built this tool to detect abnormal spikes.
+
+# Architecture 
+
+I have created two Grafana panels for a single graph:
+one for visibility and the other for alerting purposes.
+
+This Violentmonkey script monitors the Grafana page every minute.
+When a string that starts with 'ALERT', like the example below, appears in an alerting panel, the script captures it and sends the trailing substrings, split by '_', to your Slack channel."
+
+```
+ALERT_2025-02-25-16:53_187.938_NRT_P50_TTFB_1500ms_MISSPASS_test
+```
+
+Therefore, auto-refresh in Grafana should be enabled.
+
 # Demonstration 
 <img src="doc/webhook.gif" width="1200">
 
