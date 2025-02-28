@@ -24,7 +24,7 @@ Therefore, auto-refresh in Grafana should be enabled.
 <img src="doc/webhook.gif" width="1200">
 
 
-# This tool used VioloentMonkey and You need to install it on your Browser as an extetntion. 
+# Browser scripts like ViolentMonkey is needed. An install step is as follows. 
 
 ## For User 
 1. Install Violentmonkey
